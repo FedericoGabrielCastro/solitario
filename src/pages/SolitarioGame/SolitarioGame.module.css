@@ -1,0 +1,17 @@
+.lonelyGame {
+    height: 85vh;
+    opacity: .7;
+}
+
+.deckStacks {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stacks {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+}

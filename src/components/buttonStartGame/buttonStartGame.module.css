@@ -1,0 +1,17 @@
+.buttonNewGame {
+    padding: 5px;
+    width: 120px;
+    border-radius: 15px;
+    border: 5px double #BF40BF;
+    background-color: #c6c6c6;
+    color: #000;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 0 10px 0px #000;
+}
+
+.buttonNewGame:hover {
+    background-color: #BF40BF;
+    border: 5px double #BF40BF;
+    color: #fff;
+}

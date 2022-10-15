@@ -1,0 +1,4 @@
+.cardStack {
+    display: flex;
+    gap: 10px;
+}

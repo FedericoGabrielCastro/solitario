@@ -1,11 +1,9 @@
 import { combineReducers } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
 
-import { counterReducer } from "./reducers/example";
 import { setCardDeckReducer } from "./reducers/setCardDeckReducers";
 
 const reducers = combineReducers({
-    counterReducer: counterReducer,
     setCardDeckReducer: setCardDeckReducer // set deck 
 })
 

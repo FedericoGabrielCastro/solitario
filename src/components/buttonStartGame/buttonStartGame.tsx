@@ -14,7 +14,7 @@ const ButtonStartGame: FunctionComponent = () => {
         dispatch(setCardDeckAction())
         setTimeout(() => {
             dispatch(shuffleDeckAction())
-        }, 2);
+        }, 2)
     }
     
     return (

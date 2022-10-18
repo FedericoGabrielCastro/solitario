@@ -2,3 +2,54 @@
     display: flex;
     gap: 10px;
 }
+
+.deckContent {
+    display: flex;
+}
+
+.deckWithShuffle {
+    position: absolute;
+}
+.deckWithShuffle:nth-child(1) {transform:  translate(1px,   1px);}
+.deckWithShuffle:nth-child(2) {transform:  translate(1px,   1px);}
+.deckWithShuffle:nth-child(3) {transform:  translate(1px,   1px)}
+.deckWithShuffle:nth-child(4) {transform:  translate(1px,   1px);}
+.deckWithShuffle:nth-child(5) {transform:  translate(-2px, -2.5px);}
+.deckWithShuffle:nth-child(6) {transform:  translate(-2px, -2.5px)}
+.deckWithShuffle:nth-child(7) {transform:  translate(-2px, -2.5px);}
+.deckWithShuffle:nth-child(8) {transform:  translate(-2px, -2.5px);}
+.deckWithShuffle:nth-child(9) {transform:  translate(-2px, -2.5px)}
+.deckWithShuffle:nth-child(10) {transform: translate(-5px, -5px);}
+.deckWithShuffle:nth-child(11) {transform: translate(-5px, -5px);}
+.deckWithShuffle:nth-child(12) {transform: translate(-5px, -5px)}
+.deckWithShuffle:nth-child(13) {transform: translate(-5px, -5px);}
+.deckWithShuffle:nth-child(14) {transform: translate(-5px, -5px);}
+.deckWithShuffle:nth-child(15) {transform: translate(-5px, -5px)}
+.deckWithShuffle:nth-child(16) {transform: translate(-7px, -7px);}
+.deckWithShuffle:nth-child(17) {transform: translate(-7px, -7px);}
+.deckWithShuffle:nth-child(18) {transform: translate(-7px, -7px)}
+.deckWithShuffle:nth-child(19) {transform: translate(-7px, -7px);}
+.deckWithShuffle:nth-child(20) {transform: translate(-7px, -7px);}
+.deckWithShuffle:nth-child(21) {transform: translate(-9px, -9px)}
+.deckWithShuffle:nth-child(22) {transform: translate(-9px, -9px);}
+.deckWithShuffle:nth-child(23) {transform: translate(-9px, -9px);}
+.deckWithShuffle:nth-child(24) {transform: translate(-9px, -9px)}
+.secondDeck { transform: translateX(110%);}
+
+.reusableDeck {
+    position: absolute;
+    transform: translateX(110%);
+}
+
+.restartDeck {
+    cursor: pointer
+}
+
+.restartDeck:hover {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to { transform: rotate(-360deg);}
+}

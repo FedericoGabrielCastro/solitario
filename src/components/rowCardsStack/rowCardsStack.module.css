@@ -1,4 +1,80 @@
+:root {
+    --dist-card: -65px;
+    --dist-card-positive: 35px
+}
+  
 .rowCardStack {
     display: flex;
     gap: 10px;
+}
+
+.stackCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.stackCard:nth-child(n+2) {
+    position: absolute;
+    transform: translateY(var(--dist-card));
+}
+
+.stackCard:nth-child(n+3) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + var(--dist-card-positive)));
+}
+.stackCard:nth-child(n+4) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 2)));
+}
+.stackCard:nth-child(n+5) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 3)));
+}
+.stackCard:nth-child(n+6) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 4)));
+}
+.stackCard:nth-child(n+7) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 5)));
+}
+.stackCard:nth-child(n+8) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 6)));
+}
+.stackCard:nth-child(n+9) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 7)));
+}
+.stackCard:nth-child(n+10) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 8)));
+}
+.stackCard:nth-child(n+11) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 9)));
+}
+.stackCard:nth-child(n+12) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 10)));
+}
+.stackCard:nth-child(n+13) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 11)));
+}
+.stackCard:nth-child(n+14) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 12)));
+}
+.stackCard:nth-child(n+15) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 13)));
+}
+.stackCard:nth-child(n+16) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 14)));
+}
+.stackCard:nth-child(n+17) {
+    position: absolute;
+    transform: translateY(calc(var(--dist-card) + calc(var(--dist-card-positive) * 15)));
 }

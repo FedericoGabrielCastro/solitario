@@ -11,7 +11,7 @@ const SolitarioGame = () => {
     const dispatch = useAppDispatch()
     const cards = useAppSelector(store => store.setCardDeckReducer)
     
-    console.log("esto ", cards)
+    // console.log("esto ", cards)
 
     // Load all cards
     useEffect(() => {

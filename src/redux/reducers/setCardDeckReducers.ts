@@ -34,7 +34,8 @@ export const setCardDeckReducer = (state = initialState, { type } : {
                         number: indexCard,
                         type: typeCard[cardSuit],
                         color: colorCard[typeCard[cardSuit]],
-                        img: `${indexCard}${typeCard[cardSuit]}.png`
+                        img: `${indexCard}${typeCard[cardSuit]}.png`,
+                        flip: true
                     }
                     newState = newState.concat(card) 
                 }
@@ -51,10 +52,10 @@ export const setCardDeckReducer = (state = initialState, { type } : {
             
             for (let stacks = 0; stacks < 7; stacks++) {
                 newDeck.push([])
-                for (let stack = 0; stack < stacks + 1; stack++) {
+                for (let stack = 0; stack < stacks + 1; stack++) { 
                     const firstCard = shuffleDeck[0]
                     shuffleDeck.shift()
-                    newDeck[stacks].push(firstCard)
+                    newDeck[stacks].push(firstCard) 
                 }
             }
             

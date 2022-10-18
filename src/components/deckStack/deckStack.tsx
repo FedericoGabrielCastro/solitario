@@ -23,8 +23,7 @@ const DeckStack = () => {
     const arraysDeck: any | card[]  = useAppSelector(store => store.setLastCardReducer)
     
     const [shuffleDeck, setShuffleDeck] = useState([])
-    const [reusableDeck, setReusableDeck] = useState([])
-    
+    const [reusableDeck, setReusableDeck] = useState([])    
     
     const handleCLickDeckCard = (deck: card) => {
         setShuffleDeck(shuffleDeck.filter((item: any) => item !== deck))
@@ -75,7 +74,7 @@ const DeckStack = () => {
                                 reusableDeck.map((card: card, index) => {
                                     return (
                                         <div key={index} className={styles.reusableDeck}>
-                                            <Card image={card.img}/>
+                                            <Card image={card.img} onClick={null}/>
                                         </div>
                                     ) 
                                 })

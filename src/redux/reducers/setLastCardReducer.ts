@@ -36,7 +36,7 @@ const initialState: CardsGameStack = {
 
 export const setLastCardReducer = (state = initialState, { type, card } : {
     type: ReducerTypes
-    card: any
+    card: never
 }) => {
     switch (type) {
 

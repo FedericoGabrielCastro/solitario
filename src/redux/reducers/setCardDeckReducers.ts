@@ -2,10 +2,10 @@ import { SET_CARD_DECK, SHUFFLE_DECK } from "../types";
 
 type CardType = "C" | "D" | "H" | "S" 
 interface ColorCard {
-    D: "red"
-    H: "red"
-    S: "black"
-    C: "black"
+    D: "redD"
+    H: "redH"
+    S: "blackS"
+    C: "blackC"
 }
 
 const initialState: [] = []
@@ -20,10 +20,10 @@ export const setCardDeckReducer = (state = initialState, { type } : {
         case SET_CARD_DECK:
             const typeCard: CardType[] = ["C", "D", "H", "S"]
             const colorCard: ColorCard = {
-                D: "red",
-                H: "red",
-                S: "black", 
-                C: "black"
+                D: "redD",
+                H: "redH",
+                S: "blackS", 
+                C: "blackC"
             }
             state = []
             let newState: Array<ColorCard | CardType | {img: string}> = state
